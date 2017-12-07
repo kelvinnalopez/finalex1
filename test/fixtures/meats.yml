@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Animal: MyString
+  Chef: MyString
+  Ingredients: MyText
+  movieurl: MyString
+
+two:
+  Animal: MyString
+  Chef: MyString
+  Ingredients: MyText
+  movieurl: MyString

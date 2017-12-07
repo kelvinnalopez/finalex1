@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<video width="400" controls poster = "{{posterurl}}">
+          <source src="{{movieurl}}" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+
+<p>
+  <strong>Animal:</strong>
+  <%= @meat.Animal %>
+</p>
+
+<p>
+  <strong>Chef:</strong>
+  <%= @meat.Chef %>
+</p>
+
+<p>
+  <strong>Ingredients:</strong>
+  <%= @meat.Ingredients %>
+</p>
+
+<p>
+  <strong>Movieurl:</strong>
+  <%= @meat.movieurl %>
+  <br />
+
+
+</p>
+
+<%= link_to 'Edit', edit_meat_path(@meat) %> |
+<%= link_to 'Back', meats_path %>

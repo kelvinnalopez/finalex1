@@ -1,0 +1,34 @@
+<h1>Listing meats</h1>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal</th>
+      <th>Chef</th>
+      <th>Ingredients</th>
+      <th>Movieurl</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @meats.each do |meat| %>
+      <tr>
+        <td><%= meat.Animal %></td>
+        <td><%= meat.Chef %></td>
+        <td><%= meat.Ingredients %></td>
+        <td><%= meat.movieurl %></td>
+        <td><%= link_to 'Show', meat %></td>
+        <td><%= link_to 'Edit', edit_meat_path(meat) %></td>
+        <td><%= link_to 'Destroy', meat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Meat', new_meat_path %>
+<br /><br />
+<a href="http://localhost:3000"> Back to Home Page</a>
